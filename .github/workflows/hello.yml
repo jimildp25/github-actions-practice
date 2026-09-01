@@ -1,0 +1,23 @@
+# Workflow
+# Should Have Name
+name: Jimil
+
+#on tells when the workflow will run
+on: 
+  workflow_dispatch: 
+# Jobs tell what the workflow shoukd do  
+# Should be inside the workflow
+jobs: 
+# 1st job give indentention
+  Say Hello:
+  # for short-term
+    runs-on: Ubuntu-latest
+    Steps:
+      -  Name: Say hello to everyone
+         Job: echo "Hello dosto" 
+
+# Steps
+# Should be inide jobs
+
+# Actions
+# Should be inside the Steps
