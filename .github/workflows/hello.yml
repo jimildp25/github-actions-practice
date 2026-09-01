@@ -9,10 +9,10 @@ on:
 # Should be inside the workflow
 jobs: 
 # 1st job give indentention
-  Say Hello:
+  say Hello:
   # for short-term
     runs-on: Ubuntu-latest
-    Steps:
+    steps:
       -  Name: Say hello to everyone
          Job: echo "Hello dosto" 
 
