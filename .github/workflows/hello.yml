@@ -9,12 +9,12 @@ on:
 # Should be inside the workflow
 jobs: 
 # 1st job give indentention
-  say Hello:
+  say-Hello:
   # for short-term
-    runs-on: Ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      -  Name: Say hello to everyone
-         Job: echo "Hello dosto" 
+     - name: Say hello to everyone
+       run: echo "Hello dosto" 
 
 # Steps
 # Should be inide jobs
