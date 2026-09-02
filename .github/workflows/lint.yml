@@ -2,7 +2,7 @@
 # Goal: Whenever someone changes the python code,
 # the linter will check if the syntex, format indentetion(Linting) is correct or not
 name: Auto Linter
-
+#add more linr
 on: 
   push: 
     paths: "*.py"
