@@ -1,0 +1,19 @@
+#What is the goal of your overflow
+# Goal: Whenever someone changes the python code,
+# the linter will check if the syntex, format indentetion(Linting) is correct or not
+name: Auto Linter
+
+on: 
+  push: 
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    #this step will automatically clone the code of the current branch of the runner
+    steps:
+      - name: Checkout/Clone the code
+        uses: actions/checkout@v7
+  #this step will install linting tool
+      - name: Install Linter
+        run: pip Install ruff
